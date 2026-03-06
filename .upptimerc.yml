@@ -1,0 +1,73 @@
+owner: iqworksai
+repo: status
+
+sites:
+  - name: Marketing Site
+    url: https://www.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: ComplyIQ
+    url: https://comply.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: ConsentIQ
+    url: https://consent.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: ChatIQ
+    url: https://chat.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: IQWorks API
+    url: https://api.iqworks.ai
+    expectedStatusCodes:
+      - 200
+
+  - name: License Manager
+    url: https://license.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: Updates Server
+    url: https://updates.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+assignees:
+  - maulikbengali
+
+status-website:
+  cname: status.iqworks.ai
+  name: IQWorks Status
+  introTitle: "**IQWorks** System Status"
+  introMessage: Real-time status for IQWorks services. If you experience issues not shown here, please contact support.
+  theme: light
+  logoUrl: https://www.iqworks.ai/logo.png
+  navbar:
+    - title: Status
+      href: /
+    - title: IQWorks
+      href: https://www.iqworks.ai
+
+workflowSchedule:
+  uptime: "*/5 * * * *"
+  graphs: "0 0 * * *"
+  responseTime: "0 23 * * *"
+  staticSite: "0 1 * * *"
+  summary: "0 0 * * *"
