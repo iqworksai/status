@@ -1,7 +1,7 @@
-url: https://api.iqworks.ai
-status: down
-code: 404
-responseTime: 78
-lastUpdated: 2026-03-06T19:23:39.751Z
+url: https://api.iqworks.ai/storage/v1/status
+status: up
+code: 200
+responseTime: 936
+lastUpdated: 2026-03-06T19:34:00.260Z
 startTime: 2026-03-06T19:21:58.167Z
 generator: Upptime <https://github.com/upptime/upptime>
