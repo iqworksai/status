@@ -31,7 +31,7 @@ sites:
       - 302
 
   - name: IQWorks API
-    url: https://api.iqworks.ai
+    url: https://api.iqworks.ai/storage/v1/status
     expectedStatusCodes:
       - 200
 
@@ -43,11 +43,9 @@ sites:
       - 302
 
   - name: Updates Server
-    url: https://updates.iqworks.ai
+    url: https://updates.iqworks.ai/central/latest.yml
     expectedStatusCodes:
       - 200
-      - 301
-      - 302
 
 assignees:
   - maulikbengali
