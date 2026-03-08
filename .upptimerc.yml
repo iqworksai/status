@@ -2,7 +2,7 @@ owner: iqworksai
 repo: status
 
 sites:
-  - name: Marketing Site
+  - name: IQWorks Website
     url: https://www.iqworks.ai
     expectedStatusCodes:
       - 200
