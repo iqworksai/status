@@ -9,8 +9,25 @@ sites:
       - 301
       - 302
 
+  - name: Sign-in
+    url: https://auth.iqworks.ai/.well-known/openid-configuration
+    expectedStatusCodes:
+      - 200
+
+  - name: IQWorks API
+    url: https://api.iqworks.ai/storage/v1/status
+    expectedStatusCodes:
+      - 200
+
   - name: ComplyIQ
     url: https://comply.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: ConsultIQ
+    url: https://consult.iqworks.ai
     expectedStatusCodes:
       - 200
       - 301
@@ -30,10 +47,40 @@ sites:
       - 301
       - 302
 
-  - name: IQWorks API
-    url: https://api.iqworks.ai/storage/v1/status
+  - name: DiscoverIQ
+    url: https://discover.iqworks.ai
     expectedStatusCodes:
       - 200
+      - 301
+      - 302
+
+  - name: ClassifyIQ
+    url: https://classify.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: DashboardIQ
+    url: https://dashboard.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: AcademyIQ
+    url: https://academy.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
+
+  - name: Partner Portal
+    url: https://partner.iqworks.ai
+    expectedStatusCodes:
+      - 200
+      - 301
+      - 302
 
   - name: License Manager
     url: https://license.iqworks.ai
