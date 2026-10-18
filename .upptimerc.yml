@@ -4,6 +4,7 @@ repo: status
 sites:
   - name: IQWorks Website
     url: https://www.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -11,16 +12,19 @@ sites:
 
   - name: Sign-in
     url: https://auth.iqworks.ai/.well-known/openid-configuration
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
 
   - name: IQWorks API
     url: https://api.iqworks.ai/storage/v1/status
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
 
   - name: ComplyIQ
     url: https://comply.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -28,6 +32,7 @@ sites:
 
   - name: ConsultIQ
     url: https://consult.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -35,6 +40,7 @@ sites:
 
   - name: ConsentIQ
     url: https://consent.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -42,6 +48,7 @@ sites:
 
   - name: ChatIQ
     url: https://chat.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -49,6 +56,7 @@ sites:
 
   - name: DiscoverIQ
     url: https://discover.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -56,6 +64,7 @@ sites:
 
   - name: ClassifyIQ
     url: https://classify.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -63,6 +72,7 @@ sites:
 
   - name: DashboardIQ
     url: https://dashboard.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -70,6 +80,7 @@ sites:
 
   - name: AcademyIQ
     url: https://academy.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -77,6 +88,7 @@ sites:
 
   - name: Partner Portal
     url: https://partner.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -84,6 +96,7 @@ sites:
 
   - name: License Manager
     url: https://license.iqworks.ai
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
       - 301
@@ -91,6 +104,7 @@ sites:
 
   - name: Updates Server
     url: https://updates.iqworks.ai/central/latest.yml
+    icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
 
@@ -101,14 +115,28 @@ status-website:
   cname: status.iqworks.ai
   name: IQWorks Status
   introTitle: "**IQWorks** System Status"
-  introMessage: Real-time status for IQWorks services. If you experience issues not shown here, please contact support.
-  theme: light
-  logoUrl: https://www.iqworks.ai/logo.png
+  introMessage: Real-time status for IQWorks services. If you experience issues not shown here, please contact [support@iqworks.ai](mailto:support@iqworks.ai).
+  themeUrl: https://status.iqworks.ai/iqworks-theme.css
+  logoUrl: https://status.iqworks.ai/iqworks-logo.svg
+  hideNavTitle: true
+  favicon: https://status.iqworks.ai/iqworks-icon.png
+  faviconSvg: https://status.iqworks.ai/iqworks-icon.svg
+  links:
+    - rel: preconnect
+      href: https://fonts.googleapis.com
+    - rel: preconnect
+      href: https://fonts.gstatic.com
+    - rel: stylesheet
+      href: https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap
+    - rel: stylesheet
+      href: https://status.iqworks.ai/iqworks.css
   navbar:
     - title: Status
       href: /
     - title: IQWorks
       href: https://www.iqworks.ai
+    - title: Support
+      href: mailto:support@iqworks.ai
 
 workflowSchedule:
   uptime: "*/5 * * * *"
