@@ -109,7 +109,7 @@ article.graph::before {
   inset: 0;
   z-index: -1;
   border-radius: inherit;
-  background-color: #bbf7d0;
+  background-color: #22c55e;
   -webkit-mask: var(--background) right center / contain no-repeat;
   mask: var(--background) right center / contain no-repeat;
 }
