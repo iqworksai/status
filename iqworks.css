@@ -99,11 +99,19 @@ article h4 {
 }
 
 article.graph {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.45), rgba(255, 255, 255, 0.45)), var(--background) !important;
-  background-size: 100% 100%, contain !important;
-  background-position: 0 0, right center !important;
-  background-repeat: no-repeat !important;
-  background-blend-mode: normal, luminosity !important;
+  background-image: none !important;
+  isolation: isolate;
+}
+
+article.graph::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  border-radius: inherit;
+  background-color: #bbf7d0;
+  -webkit-mask: var(--background) right center / contain no-repeat;
+  mask: var(--background) right center / contain no-repeat;
 }
 
 input[type="radio"]:checked + label {
