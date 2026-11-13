@@ -2,15 +2,8 @@ owner: iqworksai
 repo: status
 
 sites:
-  - name: IQWorks Website
-    url: https://www.iqworks.ai
-    icon: https://status.iqworks.ai/iqworks-icon.svg
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: Sign-in
+  - name: Auth Service
+    slug: sign-in
     url: https://auth.iqworks.ai/.well-known/openid-configuration
     icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
@@ -30,14 +23,6 @@ sites:
       - 301
       - 302
 
-  - name: ConsultIQ
-    url: https://consult.iqworks.ai
-    icon: https://status.iqworks.ai/iqworks-icon.svg
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
   - name: ConsentIQ
     url: https://consent.iqworks.ai
     icon: https://status.iqworks.ai/iqworks-icon.svg
@@ -46,64 +31,9 @@ sites:
       - 301
       - 302
 
-  - name: ChatIQ
-    url: https://chat.iqworks.ai
-    icon: https://status.iqworks.ai/iqworks-icon.svg
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: DiscoverIQ
-    url: https://discover.iqworks.ai
-    icon: https://status.iqworks.ai/iqworks-icon.svg
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: ClassifyIQ
-    url: https://classify.iqworks.ai
-    icon: https://status.iqworks.ai/iqworks-icon.svg
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: DashboardIQ
-    url: https://dashboard.iqworks.ai
-    icon: https://status.iqworks.ai/iqworks-icon.svg
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: AcademyIQ
-    url: https://academy.iqworks.ai
-    icon: https://status.iqworks.ai/iqworks-icon.svg
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: Partner Portal
-    url: https://partner.iqworks.ai
-    icon: https://status.iqworks.ai/iqworks-icon.svg
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: License Manager
-    url: https://license.iqworks.ai
-    icon: https://status.iqworks.ai/iqworks-icon.svg
-    expectedStatusCodes:
-      - 200
-      - 301
-      - 302
-
-  - name: Updates Server
-    url: https://updates.iqworks.ai/central/latest.yml
+  - name: Update Service
+    slug: updates-server
+    url: https://update.iqworks.ai/central/latest.yml
     icon: https://status.iqworks.ai/iqworks-icon.svg
     expectedStatusCodes:
       - 200
